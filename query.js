@@ -16,8 +16,6 @@ const statements = predicates
   .reduce((c, pg) => pg.map((p) => c.map((pc) => [...pc, p])).flat(), [[]])
   .map((segments) => segments.join(" AND "));
 
-console.log(statements);
-
 // Make the HTTP request
 
 async function run(statement) {
