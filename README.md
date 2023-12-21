@@ -1,3 +1,38 @@
+# Simple issue count query for jira
+
+To query the number of issues by every combination of below conditions,
+
+- by assignee
+- by priority `>= high`, `== medium`, `<= low``
+- by type `Story`, `Bug`
+
+set `predicates.json` as
+
+```json
+[
+  ["assignee in (jhahn)"],
+  ["priority >= High", "priority = Medium", "priority <= Low"],
+  ["type = Story", "type = Bug"]
+]
+```
+
+Query results are displayed as below
+
+```
+assignee in (jhahn) AND priority = Medium AND type = Bug
+0
+assignee in (jhahn) AND priority >= High AND type = Story
+0
+assignee in (jhahn) AND priority <= Low AND type = Bug
+0
+assignee in (jhahn) AND priority >= High AND type = Bug
+0
+assignee in (jhahn) AND priority <= Low AND type = Story
+1
+assignee in (jhahn) AND priority = Medium AND type = Story
+7
+```
+
 # Getting started
 
 1. Install latest node
