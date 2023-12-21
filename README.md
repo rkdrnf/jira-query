@@ -57,7 +57,7 @@ npm start
 
 Create `predicates.json` and `.env` fitting your needs from its respective example file `predicates.example.json`, `.env.example`.
 
-Every predicates in predicates.json are concanated with `AND` condition
+Every predicates in predicates.json are concatenated with `AND` condition
 
 ```
 [
