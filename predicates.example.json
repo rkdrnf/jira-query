@@ -1,0 +1,5 @@
+[
+  ["resolved >= '2023-01-01' AND resolution = Done AND assignee in (jhahn)"],
+  ["type = Story", "type = Bug"],
+  ["priority >= High", "priority < High AND priority > Low", "priority <= Low"]
+]
