@@ -3,7 +3,7 @@
 To query the number of issues by every combination of below conditions,
 
 - by assignee
-- by priority `>= high`, `== medium`, `<= low``
+- by priority `>= high`, `= medium`, `<= low``
 - by type `Story`, `Bug`
 
 set `predicates.json` as
