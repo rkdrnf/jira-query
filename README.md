@@ -7,7 +7,7 @@ To query the number of issues by every combination of below conditions,
 - by type `= Story`, `= Bug`
 
 set `predicates.json` as
-
+> All statements use JQL syntax
 ```json
 [
   ["assignee in (jhahn)"],
