@@ -2,9 +2,9 @@
 
 To query the number of issues by every combination of below conditions,
 
-- by assignee
-- by priority `>= high`, `= medium`, `<= low``
-- by type `Story`, `Bug`
+- by assignee `= jhahn`
+- by priority `>= high`, `= medium`, `<= low`
+- by type `= Story`, `= Bug`
 
 set `predicates.json` as
 
