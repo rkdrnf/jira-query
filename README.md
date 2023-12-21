@@ -16,7 +16,9 @@ set `predicates.json` as
 ]
 ```
 
-Query results are displayed as below
+Query results are displayed as below.
+
+> Currently predicates are joined with `AND` condition.
 
 ```
 assignee in (jhahn) AND priority = Medium AND type = Bug
